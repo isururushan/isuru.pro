@@ -57,16 +57,6 @@ export default function Home() {
     resumePath: "doc/Isuru.pdf",
   };
 
-  // Persist theme
-  useEffect(() => {
-    const saved = typeof window !== "undefined" ? localStorage.getItem("theme") : null;
-    if (saved === "dark") setDark(true);
-  }, []);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    localStorage.setItem("theme", dark ? "dark" : "light");
-  }, [dark]);
 
   const experiences: Experience[] = useMemo(
     () => [
@@ -223,7 +213,7 @@ export default function Home() {
   }, [projectQuery, projects]);
 
   return (
-    <div className={dark ? "dark" : ""}>
+    <div>
       <main className="min-h-screen text-gray-900 dark:text-gray-100 transition-colors bg-gradient-to-b from-slate-50 to-slate-100 dark:from-gray-950 dark:to-black">
         {/* Header */}
         <header className="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-black/40 border-b border-black/5 dark:border-white/10">
@@ -252,14 +242,6 @@ export default function Home() {
               >
                 Resume
               </a>
-
-              <button
-                onClick={() => setDark((v) => !v)}
-                className="px-4 py-2 rounded-xl bg-white dark:bg-gray-900 shadow-sm border border-black/10 dark:border-white/10 hover:opacity-95"
-                aria-label="Toggle theme"
-              >
-                {dark ? "☀ Light" : "🌙 Dark"}
-              </button>
             </div>
           </div>
         </header>
