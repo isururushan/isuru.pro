@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  images: { unoptimized: true }, // needed for next/image on pages
+  images: { unoptimized: true },
+  trailingSlash: true, // recommended for Pages
 };
 
 module.exports = nextConfig;
