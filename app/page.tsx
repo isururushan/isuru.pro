@@ -269,7 +269,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-14 items-center">
             <motion.div initial="hidden" animate="show" variants={stagger} className="max-w-xl">
               <motion.p variants={fadeUp} className="text-sm opacity-80">
-                Software Engineer • Full Stack
+                Software Engineer • Full Stack | Application Support & IT Operations
               </motion.p>
 
               <motion.h1
