@@ -54,7 +54,7 @@ export default function Home() {
     phone: "+94 78 146 8942",
     location: "Kalutara, Sri Lanka",
     address: "No.167 Dediyawala, Kalutara North",
-    resumePath: "/Isuru.pdf",
+    resumePath: "doc/Isuru.pdf",
   };
 
   // Persist theme
@@ -335,7 +335,7 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-r from-blue-600/20 to-purple-600/20 blur-2xl" />
                 <Image
-                  src="/profile.jpg"
+                  src="images/profile.jpg"
                   alt="Isuru Rushan Aberathne"
                   width={420}
                   height={520}
