@@ -54,7 +54,7 @@ export default function Home() {
     phone: "+94 78 146 8942",
     location: "Kalutara, Sri Lanka",
     address: "No.167 Dediyawala, Kalutara North",
-    resumePath: "doc/Isuru.pdf",
+    resumePath: "doc/Isuru_Rushan_Aberathne.pdf",
   };
 
 
